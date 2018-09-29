@@ -5,11 +5,11 @@
 ## Build Setup
 
 ``` bash
-# compile and deploy solidity contracts to testnet
-yarn run deploy
-
 # install dependencies
 yarn
+
+# compile and deploy solidity contracts to testnet
+yarn run deploy
 
 # serve with hot reload at localhost:8080
 yarn run dev
