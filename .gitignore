@@ -14,3 +14,4 @@ yarn-error.log*
 *.sln
 /contract/config.json
 /static/settings.js
+/build/contracts/

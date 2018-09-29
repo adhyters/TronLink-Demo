@@ -3,7 +3,7 @@ const solc = require('solc');
 const TronWeb = require('TronWeb');
 const config = require('../config/tron.json');
 
-const CONTRACT_FOLDER = '../contract/';
+const CONTRACT_FOLDER = '../contracts/';
 
 
 const HttpProvider = TronWeb.providers.HttpProvider;

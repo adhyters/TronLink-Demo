@@ -1,16 +1,83 @@
 {
-    "contract.sol:TrxMessages": {
-        "address": "41a7e97aba6a91b48a35d03b1955232dc4877e577a",
+    "Migrations.sol:Migrations": {
+        "address": "415c439542f7a9eefda7b27e59a12a7a6ca7b6e948",
+        "abi": [
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "name": "new_address",
+                        "type": "address"
+                    }
+                ],
+                "name": "upgrade",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [],
+                "name": "last_completed_migration",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [],
+                "name": "owner",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "name": "completed",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "setCompleted",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            }
+        ]
+    },
+    "TrxMessages.sol:TrxMessages": {
+        "address": "41381745561a187be838511911a3b7b76b16b263ae",
         "abi": [
             {
                 "constant": true,
                 "inputs": [
                     {
-                        "name": "id",
-                        "type": "int256"
+                        "name": "",
+                        "type": "uint256"
                     }
                 ],
-                "name": "getMessage",
+                "name": "messages",
                 "outputs": [
                     {
                         "name": "",
@@ -33,7 +100,7 @@
                 "outputs": [
                     {
                         "name": "out",
-                        "type": "int256"
+                        "type": "uint256"
                     }
                 ],
                 "payable": false,
@@ -44,11 +111,11 @@
                 "constant": true,
                 "inputs": [
                     {
-                        "name": "",
-                        "type": "int256"
+                        "name": "id",
+                        "type": "uint256"
                     }
                 ],
-                "name": "messages",
+                "name": "getMessage",
                 "outputs": [
                     {
                         "name": "",

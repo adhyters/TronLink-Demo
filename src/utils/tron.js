@@ -1,10 +1,11 @@
 const contracts = require('../config/contracts.json');
 
-export const postMessage = async (message) => {
-    const contractInfo = contracts["contract.sol:TrxMessages"];
-    const contract = window.tronWeb.contract(contractInfo.abi, contractInfo.address);
-    console.log(contract.methods);
-    const result = await contract.methods['postMessage(string)']([message]).send();
+export const postMessage = async (message) => 
+{
+    const trxMessages = contracts["TrxMessages.sol:TrxMessages"];
+    const contract = tronWeb.contract(trxMessages.abi, trxMessages.address);
+    console.log(await contract.methods.getMessage(0).call());
+    const result = await contract.methods.postMessage(message).send();
     console.log(result);
 };
 
