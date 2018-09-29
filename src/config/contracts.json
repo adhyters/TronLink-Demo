@@ -1,0 +1,64 @@
+{
+    "contract.sol:TrxMessages": {
+        "address": "41a7e97aba6a91b48a35d03b1955232dc4877e577a",
+        "abi": [
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "id",
+                        "type": "int256"
+                    }
+                ],
+                "name": "getMessage",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "name": "message",
+                        "type": "string"
+                    }
+                ],
+                "name": "postMessage",
+                "outputs": [
+                    {
+                        "name": "out",
+                        "type": "int256"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "",
+                        "type": "int256"
+                    }
+                ],
+                "name": "messages",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ]
+    }
+}
