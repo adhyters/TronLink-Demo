@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# tronlink/vuejs boilerplate
 
 >  
 
